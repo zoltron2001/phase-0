@@ -39,14 +39,14 @@ Open the git bash (programs > git > git bash) you should be presented with a ter
 
 Clone this repo to your desktop directory:
 
-'cd Desktop'
-'git clone https://github.com/Devbootcamp/phase-0-dev-box.git'
+`cd Desktop`
+`git clone https://github.com/Devbootcamp/phase-0-dev-box.git`
 
 install two vagrant plugins in your command line:
 
-`vagrant plugin install vagrant-vbguest'
+`vagrant plugin install vagrant-vbguest`
 
-'vagrant plugin install vagrant-librarian-chef-nochef'
+`vagrant plugin install vagrant-librarian-chef-nochef`
 
 To install the virtual machine, type:
 
@@ -83,7 +83,7 @@ To find the shared folder between the VM and your home operating system, change 
 
 `rspec -v` should output 3.1.5
 
-`sqlite3 --version' should output 3.8.7
+`sqlite3 --version` should output 3.8.7
 
 `git --version` should output 2.2.1
 
