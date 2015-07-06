@@ -8,9 +8,9 @@ Programs to install:
 
 Short list of commands without explanations, run these after you have installed the above programs:
 
-`git clone https://github.com/Devbootcamp/phase-0-dev-box.git'
+`git clone https://github.com/Devbootcamp/phase-0-dev-box.git`
 
-`vagrant plugin install vagrant-vbguest'
+`vagrant plugin install vagrant-vbguest`
 
 `vagrant plugin install vagrant-librarian-chef-nochef`
 
