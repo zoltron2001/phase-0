@@ -20,7 +20,7 @@ Short list of commands without explanations, run these after you have installed 
 
 ``` cd /vagrant```
 
-``` exit```
+``` exit ```
 
 
 ## Windows Specific Instructions:
