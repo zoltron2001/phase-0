@@ -8,26 +8,26 @@ Programs to install:
 
 Short list of commands without explanations, run these after you have installed the above programs:
 
-```sh git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
+``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
-```sh vagrant plugin install vagrant-vbguest```
+``` vagrant plugin install vagrant-vbguest```
 
-```sh vagrant plugin install vagrant-librarian-chef-nochef```
+``` vagrant plugin install vagrant-librarian-chef-nochef```
 
-```sh vagrant up```
+``` vagrant up```
 
-```sh vagrant ssh```
+``` vagrant ssh```
 
-```sh cd /vagrant```
+``` cd /vagrant```
 
-```sh exit```
+``` exit```
 
 
 ## Windows Specific Instructions:
 
 Install the git bash software for windows, follow default options until you get to adjusting your PATH.
 
-pick ```sh Run Git and included Unix tools from the Windows Command Prompt.```
+pick ``` Run Git and included Unix tools from the Windows Command Prompt.```
 
 Continue with defaults.
 
