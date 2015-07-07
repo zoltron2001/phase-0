@@ -54,15 +54,16 @@ To install the virtual machine, type:
 
 If you have an error that looks like this
 
+```
+ [NOTE]
+ You may have encountered a bug in the Ruby interpreter or extension libraries.
+ Bug reports are welcome.
+ For details: http://www.ruby-lang.org/bugreport.html
 
-> [NOTE]
-> You may have encountered a bug in the Ruby interpreter or extension libraries.
-> Bug reports are welcome.
-> For details: http://www.ruby-lang.org/bugreport.html
->
->
-> This application has requested the Runtime to terminate it in an unusual way.
-> Please contact the application's support team for more information.
+
+ This application has requested the Runtime to terminate it in an unusual way.
+ Please contact the application's support team for more information.
+```
 
 
 on this step, run this command ``` vagrant plugin uninstall ffi && vagrant plugin install ffi --plugin-version 1.9.8```
