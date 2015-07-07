@@ -1,12 +1,8 @@
 # phase-0-dev-box
 
-Programs to install:
-  - git bash (windows users only) [git bash for windows](http://git-scm.com/download/win)
-  - Vagrant [VagrantUp](https://www.vagrantup.com/downloads.html)
-  - VirtualBox [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+## Summary
 
-
-Short list of commands without explanations, run these after you have installed the above programs:
+This readme will walk you through setting up a Linux dev environment using Vagrant and Chef. Feel free to read more about these technologies online, this readme will focus on getting the technologies to work for you. Here is a list of commands you will be running in order for your reference. More detail will be presented in the releases.
 
 ``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
@@ -22,8 +18,14 @@ Short list of commands without explanations, run these after you have installed 
 
 ``` exit ```
 
+## Release 0: Install prerequisite programs
 
-## Windows Specific Instructions:
+Install these programs:
+  - git bash (windows users only) [git bash for windows](http://git-scm.com/download/win)
+  - Vagrant [VagrantUp](https://www.vagrantup.com/downloads.html)
+  - VirtualBox [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+
+### Windows Specific Instructions:
 
 Install the git bash software for windows, follow default options until you get to adjusting your PATH.
 
@@ -35,18 +37,23 @@ Install Vagrant and Virtualbox for windows, follow default options.
 
 Open the git bash (programs > git > git bash) you should be presented with a terminal interface.
 
-## VM installation Instructions
+
+## Release 1: Clone the repo
 
 Clone this repo to your desktop directory:
 
 ``` cd Desktop```
 ``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
+## Release 2: Install Vagrant Plugins
+
 install two vagrant plugins in your command line:
 
 ``` vagrant plugin install vagrant-vbguest```
 
 ``` vagrant plugin install vagrant-librarian-chef-nochef```
+
+## Release 3: Install Virtual Machine
 
 To install the virtual machine, type:
 
@@ -69,7 +76,10 @@ If you have an error that looks like this
 on this step, run this command ``` vagrant plugin uninstall ffi && vagrant plugin install ffi --plugin-version 1.9.8```
 ,
 
-otherwise you can continue to the next step:
+otherwise you can continue to the next release.
+
+## Release 4: Connect to Vagrant
+Type this command to connect to your VM:
 
 ``` vagrant ssh```
 
@@ -77,8 +87,9 @@ To find the shared folder between the VM and your home operating system, change 
 
 ``` cd /vagrant```
 
+Now you are using Linux.
 
-## Test for completion
+## Release 5: Test for completion
 
 ``` ruby -v``` should output 2.2.1
 
