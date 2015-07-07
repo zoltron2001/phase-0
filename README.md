@@ -4,19 +4,19 @@
 
 This readme will walk you through setting up a Linux dev environment using Vagrant and Chef. Feel free to read more about these technologies online, this readme will focus on getting the technologies to work for you. Here is a list of commands you will be running in order for your reference. More detail will be presented in the releases.
 
-`git clone https://github.com/Devbootcamp/phase-0-dev-box.git`
+``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
-`vagrant plugin install vagrant-vbguest`
+``` vagrant plugin install vagrant-vbguest```
 
-`vagrant plugin install vagrant-librarian-chef-nochef`
+``` vagrant plugin install vagrant-librarian-chef-nochef```
 
-`vagrant up`
+``` vagrant up```
 
-`vagrant ssh`
+``` vagrant ssh```
 
-`cd /vagrant`
+``` cd /vagrant```
 
-`exit`
+``` exit ```
 
 ## Release 0: Install prerequisite programs
 
@@ -29,7 +29,7 @@ Install these programs:
 
 Install the git bash software for windows, follow default options until you get to adjusting your PATH.
 
-pick `Run Git and included Unix tools from the Windows Command Prompt.`
+pick ``` Run Git and included Unix tools from the Windows Command Prompt.```
 
 Continue with defaults.
 
@@ -42,37 +42,38 @@ Open the git bash (programs > git > git bash) you should be presented with a ter
 
 Clone this repo to your desktop directory:
 
-`cd Desktop`
-`git clone https://github.com/Devbootcamp/phase-0-dev-box.git`
+``` cd Desktop```
+``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
 ## Release 2: Install Vagrant Plugins
 
 install two vagrant plugins in your command line:
 
-`vagrant plugin install vagrant-vbguest`
+``` vagrant plugin install vagrant-vbguest```
 
-`vagrant plugin install vagrant-librarian-chef-nochef`
+``` vagrant plugin install vagrant-librarian-chef-nochef```
 
 ## Release 3: Install Virtual Machine
 
 To install the virtual machine, type:
 
-`vagrant up`
+``` vagrant up```
 
 If you have an error that looks like this
 
-```sh
-[NOTE]
-You may have encountered a bug in the Ruby interpreter or extension libraries.
-Bug reports are welcome.
-For details: http://www.ruby-lang.org/bugreport.html
+```
+ [NOTE]
+ You may have encountered a bug in the Ruby interpreter or extension libraries.
+ Bug reports are welcome.
+ For details: http://www.ruby-lang.org/bugreport.html
 
 
-This application has requested the Runtime to terminate it in an unusual way.
-Please contact the application's support team for more information.
+ This application has requested the Runtime to terminate it in an unusual way.
+ Please contact the application's support team for more information.
 ```
 
-on this step, run this command `vagrant plugin uninstall ffi && vagrant plugin install ffi --plugin-version 1.9.8`
+
+on this step, run this command ``` vagrant plugin uninstall ffi && vagrant plugin install ffi --plugin-version 1.9.8```
 ,
 
 otherwise you can continue to the next release.
@@ -80,23 +81,23 @@ otherwise you can continue to the next release.
 ## Release 4: Connect to Vagrant
 Type this command to connect to your VM:
 
-`vagrant ssh`
+``` vagrant ssh```
 
 To find the shared folder between the VM and your home operating system, change your directory to /vagrant:
 
-`cd /vagrant`
+``` cd /vagrant```
 
 Now you are using Linux.
 
 ## Release 5: Test for completion
 
-`ruby -v` should output 2.2.1
+``` ruby -v``` should output 2.2.1
 
-`rspec -v` should output 3.1.5
+``` rspec -v``` should output 3.1.5
 
-`sqlite3 --version` should output 3.8.7
+``` sqlite3 --version``` should output 3.8.7
 
-`git --version` should output 2.2.1
+``` git --version``` should output 2.2.1
 
 ## Workflow
 
@@ -104,9 +105,9 @@ Now you are using Linux.
 
 2. Open the repo in Sublime Text
 
-2. Connect to the vagrant box using `vagrant ssh`
+2. Connect to the vagrant box using ``` vagrant ssh```
 
-3. change directory using `cd /vagrant`
+3. change directory using ``` cd /vagrant```
 
 4. Edit the files in Sublime, run them in the command line
 
