@@ -2,7 +2,7 @@
 
 ## Summary
 
-This readme will walk you through setting up a Linux dev environment using Vagrant and Chef. Feel free to read more about these technologies online, this readme will focus on getting the technologies to work for you. Here is a list of commands you will be running in order for your reference. More detail will be presented in the releases.
+This README will walk you through setting up a Linux dev environment using Vagrant and Chef. Feel free to read more about these technologies online, this README will focus on getting the technologies to work for you. Here is a list of commands you will be running in order for your reference. Detailed instructions will be presented in the releases.
 
 ``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
@@ -25,7 +25,7 @@ Install these programs:
   - Vagrant [VagrantUp](https://www.vagrantup.com/downloads.html)
   - VirtualBox [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
-### Windows Specific Instructions:
+### For Windows Machines only:
 
 Install the git bash software for windows, follow default options until you get to adjusting your PATH.
 
@@ -42,12 +42,13 @@ Open the git bash (programs > git > git bash) you should be presented with a ter
 
 Clone this repo to your desktop directory:
 
+In the terminal type:
 ``` cd Desktop```
 ``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
 ## Release 2: Install Vagrant Plugins
 
-install two vagrant plugins in your command line:
+Install two vagrant plugins in your command line:
 
 ``` vagrant plugin install vagrant-vbguest```
 
@@ -73,8 +74,7 @@ If you have an error that looks like this
 ```
 
 
-on this step, run this command ``` vagrant plugin uninstall ffi && vagrant plugin install ffi --plugin-version 1.9.8```
-,
+on this step, run this command ``` vagrant plugin uninstall ffi && vagrant plugin install ffi --plugin-version 1.9.8```,
 
 otherwise you can continue to the next release.
 
@@ -87,7 +87,7 @@ To find the shared folder between the VM and your home operating system, change 
 
 ``` cd /vagrant```
 
-Now you are using Linux.
+Now you are using Linux!
 
 ## Release 5: Test for completion
 
@@ -100,16 +100,18 @@ Now you are using Linux.
 ``` git --version``` should output 2.2.1
 
 ## Workflow
+In order to use this environment, you will need to make sure you clone your Devbootcamp repositories into this repository. 
 
 1. Clone the unit repo into the phase-0-dev-box
 
-2. Open the repo in Sublime Text
+2. Connect to the vagrant box (in your command line) using ``` vagrant ssh```
 
-2. Connect to the vagrant box using ``` vagrant ssh```
+3. Open the repository in Sublime Text
 
-3. change directory using ``` cd /vagrant```
+4. Change directories using ``` cd /vagrant```
+<!--do they always need to do this to change directories here? It might be good to specify that -->
 
-4. Edit the files in Sublime, run them in the command line
+5. Edit the files in Sublime, then run them as instructed in the command line
 
 
 
