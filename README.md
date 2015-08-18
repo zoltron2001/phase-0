@@ -6,6 +6,8 @@ This README will walk you through setting up a Linux dev environment using Vagra
 
 ``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
 
+``` cd phase-0-dev-box ```
+
 ``` vagrant plugin install vagrant-vbguest```
 
 ``` vagrant plugin install vagrant-librarian-chef-nochef```
