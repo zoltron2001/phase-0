@@ -46,7 +46,10 @@ Clone this repo to your desktop directory:
 
 In the terminal type:
 ``` cd Desktop```
+
 ``` git clone https://github.com/Devbootcamp/phase-0-dev-box.git```
+
+`cd phase-0-dev-box`
 
 ## Release 2: Install Vagrant Plugins
 
