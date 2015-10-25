@@ -83,10 +83,13 @@ Full Process (for Zollie's purposes):
     git push origin feature-branch-name
 
   Merge master or other branch with working branch (if ready) on Github
+  Delete now redundent branch via Github
 
   "git pull" to enact merge locally
     git checkout master
     git pull origin HEAD
+    git branch -d feature-branch name
+      to delete redundent branch
   
 ## What is a pull request and how do you create and merge one?
 
