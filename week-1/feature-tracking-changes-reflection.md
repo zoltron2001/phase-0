@@ -27,7 +27,7 @@ HEAD (without the "^") refers to where you currently are. From there
 the progression goes "HEAD^", "HEAD~3","HEAD~4", etc.
 
 ## What are the 3 stages of a git change and how do you move a file
-from one stage to the other?
+## from one stage to the other?
 
 The three local stages of a git change are Edit, Add, and Commit.
 
@@ -44,7 +44,7 @@ to commit by either selecting each change individually, or the whole
 lot of them.
 
 ## Write a handy cheatsheet of the commands you need to commit your
-changes.
+## changes.
 
 Commit changes:
 

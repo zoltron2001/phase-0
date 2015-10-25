@@ -1,4 +1,4 @@
-#
+## 1.1 Think About Time Reflection
 
 I ended up skimming through all the techniques, but Tiny Habits
 interested me the most. Time boxing is limiting yourself to work on
@@ -20,7 +20,7 @@ maintain a focused work effort. I don’t think that last bit will be
 difficult but I can review all the “getting in the zone” articles if
 necessary.
 
-##
+## 1.2 The Command Line Reflection
 
 A shell is a terminal or interface that can be used to interact with
 a system. So in my case I use “Powershell” to interact with the Unix
@@ -77,7 +77,7 @@ warned to be cautious).
 
 “help” displays a help manual
 
-###
+## 1.4 Forking and Cloning Reflection
 
 How To: 
 
