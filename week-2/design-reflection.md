@@ -3,17 +3,25 @@
     <img src="/img/site-map-1.png">
     <p>
       What are the 6 Phases of Web Design?
-
+    </p>
+      <p>
       
+      </p>
+    <p>
       What is your site's primary goal or purpose? What kind of content will your site feature?
+    </p>
+      <p>
         My site’s primary purpose is to highlight my portfolio. Ideally my portfolio will be
         directly related to my employment interests. Hopefully that content will be coding heavy,
         but that will be determined by what I build while at DBC. I also have some video,
         photograph, radio segments, and education modules that I could post. However, I’m trying to
         move away from content/frontend development, so perhaps that might not be a good thing to
         highlight indefinitely.
-      
+      </p>
+    <p>
       What is your target audience's interests and how do you see your site addressing them?
+    </p>
+      <p>
         My target audience will be potential employers. I’d imagine their primary interests will be
         in determining whether the work I am highlighting relates to the work they’d like me to do.
         They’ll also might try to figure out if my work was made efficiently, with care, with an eye
@@ -23,22 +31,32 @@
         wherever the ingenuity is not, I’d like to push for clean, easy to navigate design. I
         wouldn’t mind eventually adding a behind-the-scenes description of creating the site and the
         contents of it in the blog to demonstrate how I work.
-      
+      </p>
+    <p>
       What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio? It's ok to have several actions at once, or different actions for different kinds of visitors.
-        
+    </p>
+      <p>
         Primarily, I’d like users to look at my portfolio with the ability to dig deeper if
         intereste. “Digging deeper” not only applies to the work itself, but my blog, about, and
         contact information as well. So in a way I guess I’d like my work and the website itself to
         act as attractors that drive the user towards a more detailed look at me.
-      
+      </p>
+    <p> 
       What are the main things someone should know about design and user experience?
+    </p>
+      <p>
 
-
+      </p>
+    <p>
       What is user experience design and why is it valuable? 
-
+    </p>
+      <p>
       
+      </p>
+    <p>
       Which parts of the challenge did you find tedious?
-
-
-    <p/>
-  <html/>
+    </p>
+      <p>
+      
+      </p>
+  </html>
