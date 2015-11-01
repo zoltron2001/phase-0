@@ -5,7 +5,12 @@
       What are the 6 Phases of Web Design?
     </p>
       <p>
-      
+      Information Gathering
+      Planning
+      Design
+      Development
+      Testing and Delivery
+      Mainteance
       </p>
     <p>
       What is your site's primary goal or purpose? What kind of content will your site feature?
@@ -45,7 +50,7 @@
       What are the main things someone should know about design and user experience?
     </p>
       <p>
-
+        
       </p>
     <p>
       What is user experience design and why is it valuable? 
