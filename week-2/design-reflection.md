@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
 
-  <img src="../imgs/site-map-1.png">
+<a img src="/week-2/imgs/site-map-1.png">Site Map</a>
 
-</html>
       What are the 6 Phases of Web Design?
 
         Information Gathering
