@@ -1,5 +1,5 @@
 
-<a img src="/week-2/imgs/site-map-1.png">Site Map</a>
+<img src="/week-2/imgs/site-map-1.png">
 
       What are the 6 Phases of Web Design?
 
