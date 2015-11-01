@@ -27,9 +27,9 @@
         eye for users, and so on. While it is difficult to affect the content I will be hosting at
         this point (since a lot of it hasn’t been built yet), I can affect the website itself. I
         would like to be on the lookout for points of ingenuity (ways that my website can stand
-          out). But wherever the ingenuity is not, I’d like to push for clean, easy to navigate
-          design. I wouldn’t mind eventually adding a behind-the-scenes description of creating the
-          site and the contents of it in the blog to demonstrate how I work.
+        out). But wherever the ingenuity is not, I’d like to push for clean, easy to navigate
+        design. I wouldn’t mind eventually adding a behind-the-scenes description of creating the
+        site and the contents of it in the blog to demonstrate how I work.
 
       What is the primary "action" the user should take when coming to your site? Do you want them
       to search for information, contact you, or see your portfolio? It's ok to have several
