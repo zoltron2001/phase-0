@@ -1,4 +1,4 @@
-<img src="../img/site-map-1.png">
+<img src="../imgs/site-map-1.png">
 
       What are the 6 Phases of Web Design?
 
