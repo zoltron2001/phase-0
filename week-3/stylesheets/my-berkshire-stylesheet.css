@@ -1,0 +1,62 @@
+html {
+	color: #000080;
+}
+
+.line {
+    border-top: black solid 1px;
+    height: 10px;
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    clear: both;
+}
+
+a {
+    color: #800080;
+}
+
+a:visited {
+    color: red;
+}
+
+header {
+    text-align: center;
+    line-height: .95em;
+}
+.name {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+.first-letter {
+    font-size: 200%;
+}
+
+.small-text {
+    font-size: 75%;
+}
+.address {
+    font-size: 75%;
+}
+
+.homepage {
+    font-size: 90%;
+}
+.columns-left {
+   float: left;
+    width:
+}
+.columns-right {
+    float: right;
+}
+.bottom {
+    clear:both;
+}
+.link-text {
+    font-size: 75%;
+}
+
+.geico {
+  text-align: center;
+}
