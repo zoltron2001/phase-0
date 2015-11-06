@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GPS Fake Blog</title>
+</head>
+<body>
+	<main>
+		<article>
+			<h4>Version Control</h4>
+			      <p>
+			          The biggest topic of the week has been version control. While this isn't necessarily a new concept to anyone who's been asked to turn in multiple drafts of a paper, it is a fairly rigid process in the coding world. At its core, it's not a difficult concept - save your work often and create checkpoints that can be returned to if needed. On an individual basis, this is useful in case of coding mishaps, loss of original work, and so on. The benefits are magnified on a collaborative basis. Work lost in the shuffle, mistakes created out of the chaos, and merge conflicts can be rectified (or avoided altogether) by frequent commits, pushes, and pulls (more on that later).
+			      </p>
+			      <h4>Your Neighborhood Git</h4>
+			      <p>
+			          The version control process begins with Git, the local repository of your work. Here we can track files and create our checkpoints (or commits). If the coder is hip to the process, he or she will check their git status whenever something new is created. That will lead to a list of things that aren't yet being tracked. Say we make an html file via <i>touch file.html</i>. Now if we check <i>git status</i>, file.html will show up as an untracked file.
+			      </p>
+			      <p>
+			          When Git labels something as untracked, it is saying it has noticed that file, it recognizes it as something that was not included in the previous commit, and it won't include it in the next commit unless we explicitly tell it to. We type <i>git add file.html</i> and the file is tracked. To commit (again, or save) our current state, we type <i>git commit branch-name</i>. And voila, a local version in the version control system has been created.
+			      </p>
+			      <h4>Boss Github</h4>
+			      <p>
+			          We use Github to store our code remotely to manage the greater product. On the base level, Github provides a remote backup of our work (cloud storage). If the computer we use decides to go on strike, we can hire a scab computer and download a remote copy. But the big benefit is that we can work collaboratively. Github recieves all the files each Git sends to it, and manages any conflicts that come along with that process. So if two parties submit the same code but write it differently (as they likely would), then Github will help reserve that merge conflict by alerting one of the parties and walking them througha a resolution.
+			      </p>
+		</article>
+	</main>
+</body>
+</html>
