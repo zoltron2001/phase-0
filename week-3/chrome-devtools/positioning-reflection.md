@@ -8,7 +8,7 @@
 
 <p>3. Row</p>
 
-<img src="/week-3/chrome-devtools/imgs/chrome-devtools/imgs/3-Row.PNG">
+<img src="/week-3/chrome-devtools/imgs/3-Row.PNG">
 
 <p>4. Make Equidistant</p>
 
