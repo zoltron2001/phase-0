@@ -3,9 +3,9 @@
 <p>2. Column</p>
 <img src="/week-3/chrome-devtools/imgs/2-Column.png">
 <p>3. Row</p>
-<img src="imgs/3-Row.png">
+<img src="/chrome-devtools/imgs/3-Row.png">
 <p>4. Make Equidistant</p>
-<img src="/imgs/4-Make-Equidistant.png">
+<img src="chrome-devtools/imgs/4-Make-Equidistant.png">
 <p>5. Squares</p>
 <img src="imgs/5-Squares">
 <p>6. Footer</p>
