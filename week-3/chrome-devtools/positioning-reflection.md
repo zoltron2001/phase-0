@@ -24,7 +24,7 @@
 
 <p>7. Header</p>
 
-<img src="../imgs/7-Header.PNG">
+<img src="/week-3/chrome-devtools/imgs/7-Header.PNG">
 
 <p>8. Sidebar</p>
 
