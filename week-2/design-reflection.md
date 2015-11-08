@@ -62,4 +62,3 @@
       Which parts of the challenge did you find tedious?
 
         None of this felt tedious.
-  </html>
