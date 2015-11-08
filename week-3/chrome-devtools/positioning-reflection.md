@@ -1,37 +1,11 @@
-1. Change the Colors
-
 <img src="/phase-0-dev-box/week-3/chrome-devtools/imgs/1-Change-the-Colors.png">
-
-2. Column
-
 <img src="phase-0-dev-box/week-3/chrome-devtools/imgs/2-Column.png">
-
-3. Row
-
 <img src="/week-3/chrome-devtools/imgs/3-Row.png">
-
-4. Make Equidistant
-
 <img src="week-3/chrome-devtools/imgs/4-Make-Equidistant.png">
-
-5. Squares
-
 <img src="/chrome-devtools/imgs/5-Squares.png">
-
-6. Footer
-
 <img src="chrome-devtools/imgs/6-Footer.png">
-
-7. Header
-
 <img src="/imgs/7-Header.png">
-
-8. Sidebar
-
 <img src="imgs/8-Sidebar.png">
-
-9. Get Creative
-
 <img src="/9-Get-Creative.png">
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
