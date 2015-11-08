@@ -1,11 +1,12 @@
+<html>
 <p>1. Change the Colors</p>
-<img src="week-3/chrome-devtools/imgs/1-Change-the-Colors.png">
+<img src="/imgs/1-Change-the-Colors.png">
 <p>2. Column</p>
-<img src="/week-3/chrome-devtools/imgs/2-Column.png">
+<img src="imgs/2-Column.png">
 <p>3. Row</p>
-<img src="/chrome-devtools/imgs/3-Row.png">
+<img src="imgs/3-Row.png">
 <p>4. Make Equidistant</p>
-<img src="chrome-devtools/imgs/4-Make-Equidistant.png">
+<img src="imgs/4-Make-Equidistant.png">
 <p>5. Squares</p>
 <img src="imgs/5-Squares">
 <p>6. Footer</p>
@@ -52,3 +53,4 @@ What was your impression of this challenge overall? (love, hate, and why?)
 	these tasks - namely the "get creative" section. I'm glad I had to suffer for a bit on, but now
 	I wish I had a big list of all the methods. It'd be really cool if certain answers were
 	released after submission or after the week is over.
+</html>
