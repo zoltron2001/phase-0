@@ -1,12 +1,38 @@
-<img src="/phase-0-dev-box/week-3/chrome-devtools/imgs/1-Change-the-Colors.png">
-<img src="phase-0-dev-box/week-3/chrome-devtools/imgs/2-Column.png">
-<img src="/week-3/chrome-devtools/imgs/3-Row.png">
-<img src="week-3/chrome-devtools/imgs/4-Make-Equidistant.png">
-<img src="/chrome-devtools/imgs/5-Squares.png">
-<img src="chrome-devtools/imgs/6-Footer.png">
-<img src="/imgs/7-Header.png">
-<img src="imgs/8-Sidebar.png">
-<img src="/9-Get-Creative.png">
+<p>1. Change the Colors</p>
+
+<img src="/imgs/1-Change-the-Colors.PNG">
+
+<p>2. Column</p>
+
+<img src="chrome-devtools/imgs/2-Column.PNG">
+
+<p>3. Row</p>
+
+<img src="/chrome-devtools/imgs/3-Row.PNG">
+
+<p>4. Make Equidistant</p>
+
+<img src="/4-Make-Equidistant.PNG">
+
+<p>5. Squares</p>
+
+<img src="/5-Squares.PNG">
+
+<p>6. Footer</p>
+
+<img src="/6-Footer.PNG">
+
+<p>7. Header</p>
+
+<img src="../imgs/7-Header.PNG">
+
+<p>8. Sidebar</p>
+
+<img src="/8-Sidebar.PNG">
+
+<p>9. Get Creative</p>
+
+<img src="/9-Get-Creative.PNG">
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
 	
