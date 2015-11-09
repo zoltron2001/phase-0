@@ -66,3 +66,61 @@ li {
 .legal{
     font-size: 1.7em;
 }
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+    
+    First, if this is a stylesheet, the link needs to go in the head. This has to do with how 
+    the information will be read by browsers and such. So it's stored up there with all the other
+    metadata.
+
+    It must include a link tag (self closing) as well as the following attributes:
+        href: used to indicate the path to the file
+        type: techincally this is optional, but it's used to specify the media
+        rel: if this is a stylesheet, this used to define the relationship of the doc to the html
+
+    Most of this can be obliviously copy pasted like this *kablam*:
+    <link type="text/css" rel="stylesheet" href="path.css"/>
+    But the tricky part is nailing down that href portion. If I'm struggling to get the right 
+    relative path, I play around - I might /'s and ..'s, look for typos, or go up/down a directory.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you
+wanted it?
+    
+    The original used table with two td's per row in order to create a two column effect. Our 
+    html wasn't quite organized that way, so we decided to use floats and margins instead. It 
+    was broken up into two chunks, one for the left column, and one for the right. I think it 
+    was a clever solution even though it doesn't look exaclty the same. as the original. 
+    Namely, there's a bigger gap between the columns if zoomed out since the columns are 
+    hugging right and left sides of the screen.
+
+    The hardest things often involved positioning something via margin, display, or position. 
+    Often there are multiple methods that might work, but each creates its own issues.
+    
+What CSS did you use to modify the element style (like size, color, etc.)
+    
+    Stylistic choices either involved font-size or color (for font-color).  Color was pretty 
+    straight forward. Size was finicky since there were so many font-sizes used. We ended up 
+    leaving that stuff to do after the pairing session since we both knew how to do it and it 
+    seemed time consuming. The tricky thing with font sizes was sectioning off the text that 
+    needed to be targeted. For that I used classes.
+    
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you
+didn't, how would you know which one to add to your HTML?
+    
+    We used classes since I remembered hearing something about avoiding ids - though I can't 
+    remember where. I think it had something to do with ids being tricky once things get more
+    complicated. In any case, classes seemed to do just fine. And, even though we didn't do it,
+    they could have been used multiple times (unlike ids).
+    
+When you compared your site to the actual code base, which do you think had cleaner code that
+followed best practices and why?
+    
+    I don't feel confident in my code enough to declare it a winner. However, as far as the html 
+    is concerned I don't see as many semantic elements in the original. That might have to do with 
+    when it was written more than anything else. There are also a ton of nested items - <p>'s and 
+    <div>'s. Whereas our use of classes makes it a bit more apparent to me what each section is for. 
+    The CSS is a tough call. Since we were trying to replicate the original, and we failed in that 
+    aim, so the original of course did it better. Our CSS seems a bit lengthy to me too. I wonder 
+    how lengthy the original was.
+
+*/
