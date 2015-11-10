@@ -1,0 +1,32 @@
+body {
+    background-color: #F2F2F2;
+    font-family: frosty;
+}
+header {
+    background-color: blue;
+    color: white;
+    padding-left: 0px;
+}
+
+header > p {
+    background-color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.column-1 {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.column-2 {
+    display: inline-block;
+    width: 45%;
+    margin-top: 0em;
+    vertical-align: top;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+}
