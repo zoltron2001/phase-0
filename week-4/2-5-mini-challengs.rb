@@ -5,12 +5,12 @@ days = 365
 hours = 24
 
 hours_in_a_year = (year*days*hours)
-return hours_in_a_year
+p hours_in_a_year
 
 #Minutes in a Decade
 
-decade = 10*years
+decade = 10*year
 minutes = 60
 
 minutes_in_a_decade = (hours_in_a_year*decade*minutes)
-return minutes_in_a_decade
+p minutes_in_a_decade
