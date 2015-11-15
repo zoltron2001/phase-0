@@ -169,5 +169,12 @@ cartmans_lie('A meteor the size of the earth is about to hit Wyoming!')
 # --- REFLECTION -------------------------------------------------------
 # Write your reflection below as a comment.
 =begin
-
+Which error was the most difficult to read?
+	I guess the LoadError. It gave a lot of information. But non of them were too intimidating.
+How did you figure out what the issue with the error was?
+	The line number and error names were the biggest hints. Between those two, I could often find the chunk of code and figure out what was wrong.
+Were you able to determine why each error message happened based on the code? 
+	Yeah I think so.
+When you encounter errors in your future code, what process will you follow to help you debug?
+	Read line number and error name. Return to code, look for error. If nothing is found check back to read full error message. Resubmit code.	
 =end
