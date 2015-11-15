@@ -4,9 +4,13 @@ year = 1
 days = 365
 hours = 24
 
-hours_in_a_year = year*days*hours
+hours_in_a_year = (year*days*hours)
+return hours_in_a_year
 
 #Minutes in a Decade
 
+decade = 10*years
+minutes = 60
 
-
+minutes_in_a_decade = (hours_in_a_year*decade*minutes)
+return minutes_in_a_decade
