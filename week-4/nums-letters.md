@@ -2,7 +2,8 @@ Reflection
 
 How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 	
-	All require a symbol between numbers or variables. The following operations are denoted as such:
+	All require a symbol between numbers or variables. The following operations are denoted 
+	as such:
 
 	Addition: +
 	Subtraction: -
@@ -11,7 +12,8 @@ How does Ruby handle addition, subtraction, multiplication, and division of numb
 
 What is the difference between integers and floats?
 	
-	Integers are whole numbers (positive, negative, or zero) without decimal points. Floats, or floating-point numbers, have decimal points.
+	Integers are whole numbers (positive, negative, or zero) without decimal points. 
+	Floats, or floating-point numbers, have decimal points.
 
 	Examples
 	Integer: 1
