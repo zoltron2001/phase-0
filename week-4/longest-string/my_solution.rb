@@ -1,6 +1,6 @@
 # Longest String
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # longest_string is a method that takes an array of strings as its input
 # and returns the longest string
