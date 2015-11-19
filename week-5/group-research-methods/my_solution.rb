@@ -1,23 +1,62 @@
 # Research Methods
 
-# I spent [] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # Person 1's solution
+
+=begin
+pseudocode
+
+array
+research "contains" method
+create a blank array
+iterate through array to find words to keep
+return the new altered and duplicated array
+
+research:
+.include? will determine if a given string contains a string or character
+  "hello".include? "lo"   #=> true
+
+hash
+create a blank hash? or array?
+iterate through the source to find pets of a given age
+return new altered and duplicated hash or array
+=end
+
 def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  output = []
+  source.each do |x|
+    if "#{x}".include? "#{thing_to_find}"
+      output << "#{x}"
+    end
+  end
+  return output
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  output = []
+  source.each do |key,value|
+    if value == thing_to_find
+      output << "#{key}"
+    end
+  end
+  return output
 end
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+#Identify and describe the Ruby method(s) you implemented.
+=begin
+  my_array_finding_method
+    - iterate through source array
+    - if element matches what we're looking for
+    - add it to the new array
+  my_hash_finding_method
+    - iterate through source hash
+    - if a value matches what we're looking for
+    - add corresponding key to new array
+=end
 
 # Person 2
 
