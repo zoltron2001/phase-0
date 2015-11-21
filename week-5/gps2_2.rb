@@ -1,3 +1,5 @@
+#Guide: if you're reading this and everything is commented, I probably won't be done until 4pm EST
+
 =begin
 
 pseudocode
