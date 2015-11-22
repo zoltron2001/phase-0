@@ -14,6 +14,7 @@ Print the list (Consider how to make it look nice!)
 pseudocode:
 =end
 
+
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
