@@ -131,3 +131,28 @@ until exit == 1
     p "Improper input." 
   end
 end
+
+# Reflection
+=begin
+	
+What did you learn about pseudocode from working on this challenge?
+  It helped to divide the code into chunks to tackle.
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+  Arrays were simpler for me to manipulate but they were limited in scope.
+  I ended up using both. Arrays to get the data right, and hashes to add 
+  values to.
+What does a method return?
+  A method returns whatever it's asked to return. In some of these cases 
+  I didn't have the method return anything. Instead, it updated a global 
+  variable. In other cases, I had it print information.
+What kind of things can you pass into methods as arguments?
+  I think it's anything that can be stored as a variable. So strings, numbers, 
+  arrays and hashes. 
+How can you pass information between methods?
+  I used global variables that were created outside of the method like this:
+  $variable
+  However, I probably could have created a class as well.
+What concepts were solidified in this challenge, and what concepts are still confusing?
+  I'm not sure what the purpose of the "add" method would be, unless my "create" 
+  method was supposed to create a new hash.  
+=end
