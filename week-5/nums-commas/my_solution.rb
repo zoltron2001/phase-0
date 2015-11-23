@@ -1,6 +1,6 @@
 # Numbers to Commas Solo Challenge
 
-# I spent [1] hours on this challenge.
+# I spent [3] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
