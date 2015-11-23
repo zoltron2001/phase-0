@@ -192,5 +192,8 @@ why?
 
 What did you learn in the process of refactoring your initial solution? Did you 
 learn any new Ruby methods?
-
+  I learned how to shuffle the items in an array (I suppose that's creating not 
+  refactoring, but whatever). I figured out how to get rid of the brackets when 
+  printing an array (.join(" ")). Other than that, I just cleaned up a bit.
+  
 =end
