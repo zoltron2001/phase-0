@@ -19,7 +19,7 @@ def serving_size_calc(item_to_make, order_quantity)
   leftovers = order_quantity % menu[item_to_make]
 
   # spit out order
-  # note left overs if mod has a remainder
+  # note leftovers if there's a remainder
   if leftovers != 0
     return "Calculations complete: Make #{order_quantity/menu[item_to_make]} of #{item_to_make}, you have #{leftovers} leftover ingredients."
   else
