@@ -24,6 +24,8 @@ class CreditCard
     if @number.size != 16
     	raise ArgumentError 
     end
+    p "initialize"
+    p @number
   end
   
   def double_every_other
@@ -32,19 +34,35 @@ class CreditCard
       @number[digit] *= 2
       digit += 2
     end
+    p "double"
+    p @double_every_other
   end
   
   def split_doubles
     @number = @number.join.to_s.split('').map {|element| element.to_i}
+    p "split"
+    p @number
   end
   
   def sum_all
-    @total = 0
-    @number.each {|item| @total += item}
+    total = 0
+    @number.each do |item|
+      total += item
+    end
+    p "sum"
+    p total
+    p @number
+    @total = total
   end
   
   def check_card
-    @total % 10 == 0
+    p "check"
+    p @total
+    if @total % 10 == 0
+      return true
+    else
+      return false
+    end
   end
 
 end
@@ -53,12 +71,19 @@ end
 
 #DRIVER CODE
 
-# digits = 3958472948371047
-
-# card = CreditCard.new(digits)
-#  card.double_every_other
-# p card.split_doubles
-# p card.sum_all
-# p card.check_card
+digits = 4408041234567901
+#should equal 60
+card = CreditCard.new(digits)
+p card.double_every_other
+p card.split_doubles
+p card.sum_all
+p card.check_card
 
 # Reflection
+
+=begin
+  
+4  4  0  8  0  4  1  2  3  4  5  6  7  9  0  1
+8  4  0  8  0  4  2  2  6  4  10 6  14 9  0  1
+
+=end
