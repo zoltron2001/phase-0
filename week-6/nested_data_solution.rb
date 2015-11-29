@@ -61,13 +61,13 @@ p number_array
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
 startup_names.map! do |name|
-  #   1st level array values as a name
+  # 1st level array values as a name
   if name.kind_of?(Array)
-    #     Check if 1st level value is an array and if it is
+    # Check if 1st level value is an array and if it is
     name.map! do |also_name|
-      #       Map the second level array values as also_name
+      # Map the second level array values as also_name
       if also_name.kind_of?(Array)
-        #         Check if second level value is an array and if it is
+        # Check if second level value is an array and if it is
         also_name.map! do |also_also_name|
           # Map the third level value as also_also_name
           also_also_name += "ly"
@@ -89,16 +89,21 @@ p startup_names
 
   What are some general rules you can apply to nested arrays?
     
-    
+    Work from the outermost array inward. Count from 0 up.
 
   What are some ways you can iterate over nested arrays?
     
-    
+    We used conditionals/flow control to determine whether an 
+    element was an array or not. Assuming it was not an array, 
+    we iterated through it with .map.
 
   Did you find any good new methods to implement or did you re-use 
   one you were already familiar with? What was it and why did you 
   decide that was a good option?
 
-    
+    We used .map - which we were at least vaguely familiar with. 
+    At first we tried .each, but that returned an undefined 
+    method. Both methods iterate, however array#map will return 
+    a new array with altered values.
 
 =end
