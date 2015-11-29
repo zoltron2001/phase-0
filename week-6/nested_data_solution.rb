@@ -43,13 +43,32 @@ p nested_data[:array][1][:hash]
 
 # RELEASE 3: ITERATE OVER NESTED STRUCTURES
 
+# initial
+# number_array = [5, [10, 15], [20,25,30], 35]
+
+# number_array.map! do |x|
+#   if x.kind_of?(Array)
+#     x.map! do |y|
+#       y += 5
+#     end
+#   else
+#     x += 5
+#   end
+# end
+# p number_array
+
+# refactored
+
 number_array = [5, [10, 15], [20,25,30], 35]
 
+# iterate through array
 number_array.map! do |x|
+  # if element is an array, then iterate through that array
   if x.kind_of?(Array)
     x.map! do |y|
       y += 5
     end
+  # otherwise affect the element
   else
     x += 5
   end
@@ -58,6 +77,28 @@ p number_array
 
 # Bonus:
 
+# initial
+# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+
+# startup_names.map! do |name|
+#   if name.kind_of?(Array)
+#     name.map! do |also_name|
+
+#       if also_name.kind_of?(Array)
+#         also_name.map! do |also_also_name|
+#           also_also_name += "ly"
+#         end
+#       else
+#         also_name += "ly"
+#       end
+#     end 
+#   else
+#     name += "ly"
+#   end
+# end
+# p startup_names
+
+# refactored
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
 startup_names.map! do |name|
