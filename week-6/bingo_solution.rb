@@ -32,7 +32,8 @@ class BingoBoard
   
   def initialize(board)
     @bingo_board = board
-    @bingo = ["B","I","N","G","O"]
+    @bingo = [0,1,2,3,4]
+    @bingo_letters = { 0: "B", 1: "I", 2: "N", 3: "G", 4: "O" }
     @column = 0
   end
 
@@ -48,28 +49,17 @@ class BingoBoard
 
   def check_board
     # use generated letter to determine column number
-      if @letter == "B"
-        @column == 0
-      elsif @letter == "I"
-        @column == 1
-      elsif @letter == "N"
-        @column == 2
-      elsif @letter == "G"
-        @column == 3
-      else
-        @column = 4
-      end
+      @column = @bingo_letters[@letter]
     # check if corresponding number is on the board
-      bingo_transpose = @bingo_board.transpose
-      require 'matrix'
-      mat = Matrix[*bingo_transpose]
-      mat.column[@column].to_a
-      mat.include?(@number)
+      @bingo_board.map do |element|
+        if element[@letter] == @number
     # if it is, replace that number with an 'X'
+          element[@letter] = "X"
+      end
   end
 
   def display_board
-    
+    return bingo_board
   end
 
 end
