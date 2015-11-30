@@ -1,6 +1,6 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [3] hours on this challenge.
+# I spent [4] hours on this challenge.
 
 # Release 0: Pseudocode
 # Outline:
@@ -79,7 +79,7 @@ class BingoBoard
     # conditional is incase someone tries this with a new board
     @bingo_board[0][3] = "8 " if @bingo_board[0][3] == "8"
     # flavor
-    @dry_remark = ["Mamma mia. ","Do I have a surprise for you. ","You won't believe this one. ","Oh wow. ", "Hey look at that. ", "Now we're having fun. ", "Don't spend it all in one place. ", "Is it getting hot in here? "]
+    @dry_remark = ["Mamma mia.","Do I have a surprise for you.","You won't believe this one.","Oh wow.", "Hey look at that.", "Now we're having fun.", "Don't spend it all in one place.", "Is it getting hot in here?"]
   end
 
   def call_spaces
@@ -92,7 +92,7 @@ class BingoBoard
      @dry_remark.shuffle!
     # print letter, number, remark
      puts
-     puts " "+@dry_remark[0]+@letter+"-"+@number+"... "+@letter+"-"+@number+"."
+     puts " #{@dry_remark[0]} #{@letter}-#{@number}... #{@letter}-#{@number}."
   end
 
   def check_board
@@ -108,12 +108,9 @@ class BingoBoard
   def display_board
     # print elements and add spaces to array
     puts
-    puts "  "+@bingo_board[0].join("  ")
-    puts "  "+@bingo_board[1].join("  ")
-    puts "  "+@bingo_board[2].join("  ")
-    puts "  "+@bingo_board[3].join("  ")
-    puts "  "+@bingo_board[4].join("  ")
-    puts
+    for number in 0..4
+      puts "  "+@bingo_board[number].join("  ")
+    end
   end
 
 end
@@ -179,19 +176,19 @@ new_game.display_board
   docs. Based on what you see in the docs, what purpose does it serve, 
   and how is it called?
 
-      Even though I've encountered it before, I haven't used .join a 
-      whole lot as I did here. When I've used .join I haven't added 
-      anything to elements. If I did use it that way, maybe I wasn't 
-      driving.
+    Even though I've encountered it before, I haven't used .join a 
+    whole lot as I did here. When I've used .join I haven't added 
+    anything to elements. If I did use it that way, maybe I wasn't 
+    driving.
 
-      .join will join array elements together in a single string. If 
-      you write something between the parentheses, e.g. .join(" "), 
-      then those characters will be added between the elements. For 
-      example:
+    .join will join array elements together in a single string. If 
+    you write something between the parentheses, e.g. .join(" "), 
+    then those characters will be added between the elements. For 
+    example:
 
-        array = [1,2,3]
-        puts array => 123
-        puts array.join(" ") => 1 2 3
+      array = [1,2,3]
+      puts array => 123
+      puts array.join(" ") => 1 2 3
 
   How did you determine what should be an instance variable versus a 
   local variable?
@@ -203,9 +200,10 @@ new_game.display_board
 
   What do you feel is most improved in your refactored solution?
 
-    Displaying the array looks a lot better than before. I was able to 
-    get rid of some redundant/vestigial code. Namely, anything 
+    The code and output are much cleaner reader friendly. I was able 
+    to get rid of some redundant/vestigial code. Namely, anything 
     associated with listing letters as an array and converting letters 
-    into @columns. And the comments make it easier for me to read.
+    into @columns. I ended up iterating instead of listing all the rows 
+    to print.
     
 =end
