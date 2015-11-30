@@ -200,7 +200,7 @@ new_game.display_board
 
   What do you feel is most improved in your refactored solution?
 
-    The code and output are much cleaner reader friendly. I was able 
+    The code and output are much cleaner/reader friendly. I was able 
     to get rid of some redundant/vestigial code. Namely, anything 
     associated with listing letters as an array and converting letters 
     into @columns. I ended up iterating instead of listing all the rows 
