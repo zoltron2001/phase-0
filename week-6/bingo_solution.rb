@@ -79,7 +79,7 @@ class BingoBoard
     # conditional is incase someone tries this with a new board
     @bingo_board[0][3] = "8 " if @bingo_board[0][3] == "8"
     # flavor
-    @dry_remark = ["You won't believe this one. ","Oh wow, ", "Hey look at that, ", "Now we're having fun. ", "Don't spend it all in one place. ", "Is it getting hot in here? "]
+    @dry_remark = ["Mamma mia. ","Do I have a surprise for you. ","You won't believe this one. ","Oh wow. ", "Hey look at that. ", "Now we're having fun. ", "Don't spend it all in one place. ", "Is it getting hot in here? "]
   end
 
   def call_spaces
@@ -133,4 +133,79 @@ new_game.check_board
 new_game.display_board
 
 #Reflection
+=begin
 
+  How difficult was pseudocoding this challenge? What do you think of 
+  your pseudocoding style?
+    
+    Pseudocoding wasn't so bad. It actually helped me quite a bit in 
+    breaking down the problem. I try not to get into specifics of 
+    execution but rather to list the steps. I figure there are a ton
+    of ways to accomplish a given goal, so I'd rather prolong 
+    labeling my plan. Ideally, my pseudocode can be inserted directly
+    into my code to both direct and explain my work.
+
+  What are the benefits of using a class for this challenge?
+    
+    The problem requires a relatively complicated solution. Complicated 
+    solutions should be broken into small steps (methods). But methods 
+    can't share information between each other unless they're inside of 
+    a class.
+
+  How can you access coordinates in a nested array?
+
+    If by coordinates you mean access an element in a nested array, 
+    you end up writing something like this array[element1][element2]. 
+    'element1' would be an inner array, and 'element2' would be the 
+    element inside that array.
+
+    If you're trying to determine what coordinate would belong to a 
+    given element, I suppose I would iterate through the array and 
+    add to a counter until I found it.
+
+  What methods did you use to access and modify the array?
+    
+    The board array was directly affected by the following methods:
+      .map
+      .to_s
+    But these are the methods I used throughout the entire class:
+      .map
+      .to_s
+      .shuffle
+      .join
+      rand()
+
+  Give an example of a new method you learned while reviewing the Ruby 
+  docs. Based on what you see in the docs, what purpose does it serve, 
+  and how is it called?
+
+      Even though I've encountered it before, I haven't used .join a 
+      whole lot as I did here. When I've used .join I haven't added 
+      anything to elements. If I did use it that way, maybe I wasn't 
+      driving.
+
+      .join will join array elements together in a single string. If 
+      you write something between the parentheses, e.g. .join(" "), 
+      then those characters will be added between the elements. For 
+      example:
+
+        array = [1,2,3]
+        puts array => 123
+        puts array.join(" ") => 1 2 3
+
+  How did you determine what should be an instance variable versus a 
+  local variable?
+
+    I ended up using an instance variable for everything since I 
+    wasn't sure where I would need a given variable. I just scanned 
+    through the code, and I think the only variable that could also 
+    be local is @letter. It's only used in the check_board method.
+
+  What do you feel is most improved in your refactored solution?
+
+    Displaying the array looks a lot better than before. I was able to 
+    get rid of some redundant/vestigial code. Namely, anything 
+    associated with listing letters as an array and converting letters 
+    into @columns. And the comments make it easier for me to read.
+    
+=end
