@@ -2,24 +2,42 @@
 
 # I worked on this challenge [by myself]
 
-# I spent [#] hours on this challenge.
+# I spent [1.5] hours on this challenge.
 
 # Pseudocode
 
-# Input: 
-# Output: 
-# Steps: 
+# Input: run the greetings class and the method inside of it that greets
+# Output: the greeting
+# Steps:
+# => NameData
+# =>   initialize
+# =>     make my name equal to an instance variable
+# => Greetings
+# =>   initialize
+# =>     create a new instance of NameData
+# =>   greet
+# =>     print a greeting with my name it
+# =>     name should have been grabbed from NameData with initialize
 
 class NameData
-
+  attr_reader :name
+  def name
+    @name = "Zollie"
+  end
 end
 
 
 class Greetings
-
+  def initialize
+    @info = NameData.new
+  end
+  def hello
+    puts "Hello, #{@info.name}."
+  end
 end
 
-
+greet = Greetings.new
+greet.hello
 
 # Reflection
 =begin
@@ -84,14 +102,29 @@ Release 6
 
   What is a reader method?
     
+    A reader method initializes a variable to be read outside of the 
+    class.
+
   What is a writer method?
+
+    A writer method intializes a variable to be changed outside of the 
+    class.
     
   What do the attr methods do for you?
     
-  Should you always use an accessor to cover your bases? 
-  Why or why not?
+    They allow you to declare read/access rights for variables. They 
+    also expediate the process of creating and/or altering an instance 
+    variable into a single line.
+
+  Should you always use an accessor to cover your bases? Why or why not?
     
+    Not necessarily. If you want access to a variable outside of a class 
+    then it's most certainly useful. But if that information is sensitive, 
+    then you may not want the information to be accessible.
+  
   What is confusing to you about these methods?
     
+    Not too much. I feel like this challenge walked me through its uses 
+    methodically.
 
 =end
