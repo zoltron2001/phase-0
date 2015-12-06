@@ -1,7 +1,6 @@
 // Separate Numbers with Commas in JavaScript **Pairing Challenge**
 
-
-// I worked on this challenge with: .
+// I worked on this challenge with: Joe Plonsker
 
 // Pseudocode
 
@@ -38,7 +37,7 @@
 //   }
 // }
 
-// // Driver Code
+// Driver Code
 
 // separateComma(1234777777);
 // separateComma(1234);
