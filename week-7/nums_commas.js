@@ -47,18 +47,19 @@
 // Refactored Solution
 
 function separateComma(number) {
-  // create variables
-  var array_element = -3;
-  var output = number.toString().split('');
-  var counter = output.length;
-  // IF less than 4 digits, we're done
-  if (number.length < 4) {return number;}
+  array_element = -3;
+  // convert to string so we can split
+  output = number.toString().split('');
+  counter = output.length;
+  // IF less than 4 digits, no commas necessary, and we're done
+  if (output.length < 4) {console.log(number);}
   // otherwise, iterate
   else {
     while (counter > 0) {
+        // put in a comma
         output.splice(array_element,0,",")
-        array_element -= 4;
-        counter -= 4;
+        // move to the next comma location
+        array_element -= 4, counter -= 4;
     }
       // convert array of strings back to number
       console.log(output.join(''));
@@ -66,7 +67,7 @@ function separateComma(number) {
 }
 
 // Your Own Tests (OPTIONAL)
-
+separateComma(123);
 separateComma(1234777777);
 separateComma(1234);
 separateComma(20823509209);
@@ -93,4 +94,5 @@ separateComma(20823509209);
 
 // What built-in methods did you find to incorporate in your refactored solution?
 
-  //
+  // toString, split, splice, join, length
+  // Splice was the only unfamiliar concept.
