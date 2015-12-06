@@ -1,7 +1,7 @@
 // Separate Numbers with Commas in JavaScript **Pairing Challenge**
 
 
-// I worked on this challenge with: .
+// I worked on this challenge with:
 
 // Pseudocode
 
@@ -16,12 +16,12 @@
 // Initial Solution
 // number = 1234
 //   -3 -2 -1 0 1 2 3
-//    2  3  4 1 2 3 4 
+//    2  3  4 1 2 3 4
 
 // function separateComma(number) {
 //   // create variables
 //   var comma = -3;
-//   var output = number.toString().split(''); 
+//   var output = number.toString().split('');
 //   var counter = output.length;
 //   // IF less than 4 digits, we're done
 //   if (number.length < 4) {
@@ -49,7 +49,7 @@
 function separateComma(number) {
   // create variables
   var array_element = -3;
-  var output = number.toString().split(''); 
+  var output = number.toString().split('');
   var counter = output.length;
   // IF less than 4 digits, we're done
   if (number.length < 4) {
