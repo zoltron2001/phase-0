@@ -142,29 +142,43 @@ console.log(min(0,-10));
 // What is the difference between using a dot and a bracket to look up a
 // property? Ex. array.max vs array["max"]
 //
-//
+// Both are used to access a property. The difference is in how, in this case,
+// max is interpreted. array.max will retrieve the property max on the array.
+// Whereas array["max"] will evaluate the string "max".
 //
 // Create an object called me that stores your name, age, three favorite foods,
 // and a quirk in your eloquent.js file.
 //
-//
+var me = {
+  name: "Zollie",
+  age: 25,
+  favorite_foods: ["egg-in-hole", "lo mein", "spicy stuff"],
+  quirk: "My skin doesn't get dry very often.",
+}
+console.log(me.name);
 //
 // What is a JavaScript object with a name and value property similar to in Ruby?
 //
-//
+// A hash
 //
 // Release 2
 //
 // What are the biggest similarities and differences between JavaScript and Ruby?
 //
-//
+// Similarities:
+// Most of the symbols mean the same thing
+// Lots of equatable actions even if under a different name (ex. methods/functions)
+// Differences:
+// So many f-ing semicolons in JS
+// Error reports don't tell you much in JS
 //
 // Was some of your Ruby knowledge solidified by learning another language? If
 // so, which concepts?
 //
-//
+// As much as I hate the semicolons, I feel like I have a better sense for what is
+// and isn't an expression. Having to translate concepts (such as methods to
+// functions) has also solidified my understanding of them.
 //
 // How do you feel about diving into JavaScript after reading these chapters?
 //
-//
-//
+// A lot better.
