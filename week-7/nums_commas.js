@@ -16,12 +16,12 @@
 // Initial Solution
 // number = 1234
 //   -3 -2 -1 0 1 2 3
-//    2  3  4 1 2 3 4 
+//    2  3  4 1 2 3 4
 
 // function separateComma(number) {
 //   // create variables
 //   var comma = -3;
-//   var output = number.toString().split(''); 
+//   var output = number.toString().split('');
 //   var counter = output.length;
 //   // IF less than 4 digits, we're done
 //   if (number.length < 4) {
@@ -49,11 +49,10 @@
 function separateComma(number) {
   // create variables
   var array_element = -3;
-  var output = number.toString().split(''); 
+  var output = number.toString().split('');
   var counter = output.length;
   // IF less than 4 digits, we're done
-  if (number.length < 4) {
-    return number;}
+  if (number.length < 4) {return number;}
   // otherwise, iterate
   else {
     while (counter > 0) {
@@ -74,4 +73,24 @@ separateComma(20823509209);
 
 // Reflection
 
+// What was it like to approach the problem from the perspective of JavaScript? Did
+// you approach the problem differently?
 
+  // My approach was really similar, but the process was a lot less painful. I
+  // struggled with this exercise a lot the first time around, so I had a pretty good
+  // memory of its solution. Notable changes had more to do with orienting myself
+  // with the new syntax.
+
+// What did you learn about iterating over arrays in JavaScript?
+
+  // Conditions need to go in parentheses.
+
+// What was different about solving this problem in JavaScript?
+
+  // Methods required a bit more specific information. For example, splice required
+  // three arguments, whereas Ruby's insert only required two. Likewise, join doesn't
+  // require any arguments in ruby, but it requires one in JavaScript.
+
+// What built-in methods did you find to incorporate in your refactored solution?
+
+  //
