@@ -3,13 +3,12 @@
 // This is a solo challenge
 
 // Your mission description:
-// Overall mission: Defeat the Swordsman
-// Goals: Don't die, kill your opponent
+// Overall mission: Defeat your oponent.
+// Goals: Choose your character. Attack. Don't die.
 // Characters: Inigo Montoya, Count Rugen
-// Objects: Lunge, Block, Counter Attack, Balestra, CPU Character, User Character,
-//          Tutorial Data
-// Functions: Print Tutorial, Assign Character, Update Health, Attack
-//            Compute Outcomes, Report Outcomes
+// Objects: CPU Character, User Character,
+// Functions: Assign Character, Attack, Update Health, Report Outcomes,
+//            End Game
 
 // Pseudocode
 /*
@@ -20,8 +19,8 @@ Create usr and cpu starting information
 functions
 update usr and cpu names
 request attack
- Print request for attack
-recieve attack
+ print request for attack
+ recieve attack
  recieve users input and assign it to usr attack
  return error if improper input and re-route to request attack
 compute results
@@ -43,12 +42,12 @@ Block
 Counter Attack
   1 Reprises attacks with full point of damage
   0 Nothing happens in case of block or counter attack
-//   -1 Vulnerable to Balestra
-// Balestra
-//   0 Nothing happens in case of Balestra
-//   1 Catches counter attacking and blocking opponents off guard
-//   -1 Vulnerable to lunge
-// */
+  -1 Vulnerable to Balestra
+Balestra
+  0 Nothing happens in case of Balestra
+  1 Catches counter attacking and blocking opponents off guard
+  -1 Vulnerable to lunge
+*/
 
 // // Initial Code
 
@@ -239,11 +238,45 @@ while (game_over === false) {
 }
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+/*
+What was the most difficult part of this challenge?
+
+  Terminal doesn't like the prompt command, so all my testing was done on
+  'JSHint' (for debugging) and Chrome's dev tools (to execute code). It'd
+  be nice if I could test everything in one place.
+
+What did you learn about creating objects and functions that interact with
+one another?
+
+  It definitely helps to write things out first. Without pseudocoding, I
+  think I would have had too many functions. Otherwise, as long as your
+  calling things properly, it isn't overly complicated. You can call object
+  values for strings by writing the corresponding 'object.key' and
+  concatening it with strings.
+
+Did you learn about any new built-in methods you could use in your
+refactored solution? If so, what were they and how do they work?
+
+  Math.floor() rounds a number down to the nearest integer.
+  Math.random() returns a random number between 0 and 1.
+
+  Between the two of them you can return a random number in a range. It
+  looks like this with the inner number representing the max and the outer
+  the min:
+
+    Math.floor((Math.random() * 10) + 1);
+
+  Although, I have to admit, I don't entirely understand why those numbers are
+  determining the range. I've found a lot of explanations on how to use the
+  functions, but nothing on why the range works like that.
+
+How can you access and manipulate properties of objects?
+
+  Object property values are accessed like this:
+    object.property;
+  Object properties can be created and/or altered like this:
+    object.property = value;
+    or even
+    object.property += 1;
+
+*?
