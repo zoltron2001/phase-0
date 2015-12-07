@@ -1,17 +1,12 @@
  // JavaScript Olympics
 
-// I paired [by myself, with:] on this challenge.
+// I paired [with: Paul Dynowski] on this challenge.
 
-// This challenge took me [#] hours.
-
-
-// Warm Up
-
-
-
+// This challenge took me [1] hours.
 
 // Bulk Up
-//Pseudocode
+
+// Pseudocode
 // function takes array
 // function properties include name and event property
 // spits out "athlete won event"
@@ -39,11 +34,13 @@ console.log(athletes[0].win)
 
 // Jumble your words
 
+// Pseudocode
 // function accepts a string argument
 // uses js built-in functions to reverse string
 // convert string to array
 // reverse array
 // rejoin array into string
+
 var reverse_string = function(string){
   return string.split("").reverse().join("")
 }
@@ -65,8 +62,8 @@ var evens = function(numbers) {
   })
 }
 
-
 // // Driver Code
+
 console.log(evens([1,2,3,4,5,6,7,8]))
 
 // "We built this city"
@@ -90,4 +87,19 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 // Reflection
 
+// What JavaScript knowledge did you solidify in this challenge?
 
+  // A ton. I was rusty with JavaScript when I started this since I scheduled the
+  // pair so early in the week. Everything was new to me - forEach, constructors,
+  // etc.
+
+// What are constructor functions?
+
+  // They smell of ruby classes, but they're different. Constructors are used to
+  // create multiple objects with the same properties or methods.
+
+// How are constructors different from Ruby classes (in your research)?
+
+  // In short, a lot of the built in abilities associated with Ruby classes don't
+  // exist with JS constructors. JS constructors are just plain objects, except you
+  // can associate them with prototypes.
