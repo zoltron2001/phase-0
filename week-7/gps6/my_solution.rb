@@ -1,40 +1,40 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [Nicolette Chambers].
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
-# Loads the data and methods from the required file into the current file. 
-# Require = have to pass the full path of the file 
+# Loads the data and methods from the required file into the current file.
+# Require = have to pass the full path of the file
 # require_relative = just pass the relative path and then it will figure out where that file lives based on where the current file lives.
 # require_relative 'state_data'
 
   # "Alabama" => {pop_den: 94, etc}
   # {pop_den: 94}
-  
+
   # alabama[:pop_den]
   # STATE_DATA["Alabama"][:pop_den]
-  
-  
+
+
   # "Key" => value
   # This is called hash rocket syntax.
-  
+
   # key: value
   # Rails 4 syntax.
   # Symbol syntax.
 
   # :key => value
-  
+
   # Hash[key] => value
-  
+
   # {key: value}
   # my_hash[:key]
   # my_hash[key:] # this will not work!
 
   # :key
   # not_a_key:
-  
+
   # key: value
   # :key => value
   # Syntax suger.
@@ -94,7 +94,7 @@ STATE_DATA = {
   "Wyoming" => {population_density: 5.851, population: 576412}
   }
 
-  
+
 class VirusPredictor
 
   # Sets instance variables for the 3 parameters
@@ -106,31 +106,31 @@ class VirusPredictor
     @speed = 0.0
   end
 
-  #calls 2 methods that takes in instance variables 
+  #calls 2 methods that takes in instance variables
   def virus_effects
     predicted_deaths #(@population_density, @population, @state)
     speed_of_spread #(@population_density, @state)
     puts_string
   end
 
-  
+
   private
   # Private method are only visible INSIDE the class.
   # This means that other class methods can use them
   # But your driver code cannot
-  
+
   # aka you can do...
   # VirusEffects.new.virus_effects
-  
+
   # But not...
   # VirusEffects.new.predicted_deaths
 
-  
-  #Private method that calculates num of death based on pop density 
+
+  #Private method that calculates num of death based on pop density
   def predicted_deaths
     #  How are arguements initialized inside a class?
     # - As local variables.
-    
+
     # predicted deaths is solely based on population density
     if @population_density >= 200
       @number_of_deaths = (@population * 0.4).floor
@@ -146,13 +146,13 @@ class VirusPredictor
 
   end
 
-  
-  #How fast death spreads based on pop density 
+
+  #How fast death spreads based on pop density
   def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     # NEW FEATURE
-    
+
     if @population_density >= 200
       @speed += 0.5
     elsif @population_density >= 150
@@ -166,7 +166,7 @@ class VirusPredictor
     end
 
   end
-  
+
   def puts_string
     puts "#{@state} will lose #{@number_of_deaths} people in this outbreak and will spread across the state in #{@speed} months.\n\n"
   end
@@ -187,39 +187,39 @@ end
 def all_states_predictor
   # HINT: Find a way to automate the creation of all 50 states.
   # class.new
-  # grab 
+  # grab
   # STATE_DATA.each do |state_name, state_info|
   #   state = VirusPredictor.new(state_name, STATE_DATA[state_name][:population_density], STATE_DATA[state_name][:population])
   #   state.virus_effects
   # end
-  
+
   # STATE_DATA.each_key do |state_name|
   #   state = VirusPredictor.new(state_name, STATE_DATA[state_name][:population_density], STATE_DATA[state_name][:population])
   #   state.virus_effects
   # end
-  
-  
-  
+
+
+
 #   <h1> Video Comments </h1>
-    
+
 #   @comments.each do |current_comment|
 #     <p> current_comment </p>
-#   end 
-  
-  
-  
+#   end
+
+
+
     STATE_DATA.each do |state_name, state_info|
-      
+
       # state_name => "Alabama"
       # state_info => {pop_den: 92}
-      
+
       # STATE_DATA[state_name] => {pop_den: 92}
-  
+
       # STATE_DATA[state_name] == state_info
-      
+
       # STATE_DATA[state_name][:pop_den] => 92
       # state_info[:pop_den] => 92
-      
+
       state = VirusPredictor.new(state_name, state_info[:population_density], state_info[:population])
       state.virus_effects
   end
