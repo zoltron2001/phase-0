@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
 // I worked on this challenge with: Yi Lu
-// This challenge took me [#] hours.
+// This challenge took me [1] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -63,23 +63,85 @@ var officers = {
 }
 
 // Pseudocode
+/*
+1 iterate through votes, record votes into voteCount
 
+  a. 1st to iterate through voters: e.g. alex, bob, ...
+  b. 2nd to iterate through voters' final votes
 
+  c. add the vote to voteCount
+  d. IF the nominee does not exist in voteCount, then set the value for nominee to be 1
+    OTHERWISE, increase the value by 1
+
+2 onces recorded to voteCount, assign winner into officers
+  a. iterate through voteCount and find the biggest value for each position and return the nominee's name/position
+
+*/
 // __________________________________________
 // Initial Solution
 
+// function check_nominee (position, nominee) {
+//   if (voteCount[position].hasOwnProperty(nominee)){
+//     voteCount[position][nominee] += 1;}
+//   else {
+//     voteCount[position][nominee] = 1;
+//   }
+// };
 
+// for (var student in votes) {
+//   for (var position in votes[student]) {
+//     check_nominee (position, votes[student][position]);
+//   }
+// };
 
+// function max (tally) {
+//   var max_vote = null;
+//   var winner = null;
+//   for (var name in tally) {
+//     if (max_vote === null) {
+//       max_vote = tally[name];
+//       winner = name;
+//     }
+//     else if (tally[name] > max_vote) {
+//              max_vote = tally[name];
+//              winner = name;
+//     }
+//   }
+//   return winner;
+// };
 
+// for (var nominee in officers) {
+//   officers[nominee] = max(voteCount[nominee]);
+// };
 
-
+//http://www.w3schools.com/jsref/jsref_max.asp
 
 // __________________________________________
 // Refactored Solution
 
+// checks if nominee exists in voteCount
+//  if it does add one, otherwise put it in there
+function check_nominee (position, nominee) {
+  if (voteCount[position].hasOwnProperty(nominee)){
+    voteCount[position][nominee] += 1;}
+  else {
+    voteCount[position][nominee] = 1;
+  }
+};
+// loop through voters and run check_nominee on their votes
+for (var student in votes) {
+  for (var position in votes[student]) {
+    check_nominee (position, votes[student][position]);
+  }
+};
 
-
-
+// loop through positions officers list
+// assign positions to list of nominees sorted by vote count
+for (var position in officers) {
+  officers[position] = Object.keys(voteCount[position]).sort(function(a,b){
+    return voteCount[position][b]-voteCount[position][a]
+  })[0];
+};
 
 
 // __________________________________________
