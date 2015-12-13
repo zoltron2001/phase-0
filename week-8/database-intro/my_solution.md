@@ -1,4 +1,4 @@
-![schema diagram](schema_clueless.tiff)
+![schema diagram](/schema_clueless.tiff)
 
 ###What are databases for?
 
@@ -20,7 +20,9 @@
   The simple syntax for selecting information in SQL is `SELECT information FROM table;`. Without diving too deeply into any more syntax, generally speaking, you will be listing SQL commands on each line followed by details for that command. After the full list of commands are finished you place a ";" on the last line and return the results. So it will look something like this:
 
   `SELECT column1, column2`
+
   `FROM table`
+
   `ORDER BY column1 ASC;`
 
   While you can most certainly list all of those commands on the same line, I think it's a lot easier to split each step up for yourself incase the line of commands becomes incredibly long.
