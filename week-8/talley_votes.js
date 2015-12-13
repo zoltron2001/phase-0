@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
 // I worked on this challenge with: Yi Lu
-// This challenge took me [1] hours.
+// This challenge took me [1.5] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -212,3 +212,21 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+
+// Reflection
+
+/*
+
+What did you learn about iterating over nested objects in JavaScript?
+
+
+
+Were you able to find useful methods to help you with this?
+
+
+
+What concepts were solidified in the process of working through this challenge?
+
+
+
+*/
