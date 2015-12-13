@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
 // I worked on this challenge with: Yi Lu
-// This challenge took me [1] hours.
+// This challenge took me [1.5] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -114,8 +114,6 @@ var officers = {
 //   officers[nominee] = max(voteCount[nominee]);
 // };
 
-//http://www.w3schools.com/jsref/jsref_max.asp
-
 // __________________________________________
 // Refactored Solution
 
@@ -147,10 +145,21 @@ for (var position in officers) {
 // __________________________________________
 // Reflection
 
+/*
 
+What did you learn about iterating over nested objects in JavaScript?
 
+  Definitely gotta use that For Loop for the objects. I struggled with knowing what names to call. Even now that I've solved this, when I read through, I'm just trying to keep track of all the names we used and how they change. If this were ruby, I'd pop all this into a class and use instance variables to unify some of these terms.
 
+Were you able to find useful methods to help you with this?
 
+  Yeah, #sort was pretty cool. It allowed us to get rid of a big chunk of code meant to compare the number of votes nominees had recieved. Once the order was sorted, we just had to return the first element to declare a winner.
+
+What concepts were solidified in the process of working through this challenge?
+
+  The power of refactoring. I know I said I'm confused even now by this code, but you should have seen me during the initial solution. All that "tally" business had me cross eyed.
+
+*/
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.

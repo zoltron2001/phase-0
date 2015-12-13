@@ -1,8 +1,8 @@
 /*
 Gradebook from Names and Scores
 
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge [with Philip Thomas]
+This challenge took me [1] hours.
 
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -21,6 +21,7 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Write your code below.
+
 /*
 var gradebook = {};
 
@@ -33,7 +34,6 @@ students.forEach (addStudent);
 function defineScores(student) {
   gradebook[student].testScores = [];
 }
-
 
 for (var count = 0; count < students.length; count++) {
    defineScores(students[count]);
@@ -59,6 +59,7 @@ gradebook.getAverage = function(string){
   return average(gradebook[string].testScores);
 }
 */
+
 // __________________________________________
 // Refactored Solution
 // define gradebook object
@@ -86,9 +87,7 @@ gradebook.addScore = function(studentName, score) {
 function average(array) {
   var sum = 0;
   for(var element = 0; element < array.length; element++)
-    {
-      sum += array[element];
-    }
+    {sum += array[element];}
   return sum/array.length;
 }
 // get average of testScores for given StudentName in gradebook
@@ -99,13 +98,24 @@ gradebook.getAverage = function(studentName) {
 // __________________________________________
 // Reflect
 
+/*
+What did you learn about adding functions to objects?
 
+  It can be tricky stuff. I struggled with knowing when could just use a function or object name versus explicitly calling something by a detailed name - for example, this messy chain:
 
+  average(gradebook[studentName].testScores)
 
+How did you iterate over nested arrays in JavaScript?
 
+  We used a For Loop called inside of a function design to average the result. Here we used the notation that doesn't use 'in.'
 
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
+  While it's not a new concept altogether, I hadn't yet used #push in JavaScript. Pretty easy stuff though. You tack .push on to the thing you want to add to and indicate what is being added in parentheses. Looks like this:
 
+  array.push(element)
+
+*/
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
