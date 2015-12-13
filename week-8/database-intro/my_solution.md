@@ -1,4 +1,4 @@
-![schema diagram](/schema_clueless.tiff)
+![schema diagram](/week-8/database-intro/schema_clueless.tiff)
 
 ###What are databases for?
 
