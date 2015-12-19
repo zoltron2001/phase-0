@@ -18,24 +18,63 @@
   // Print results to console for MVP
   // Add HTML if there's time
 
-// Initial Solution (MVP)
-
-// Create a new list
-
-function create_list(grocery_list,item, quantity) {
-  var grocery_list = {};
-  add_item(grocery_list,item,quantity);
-  return grocery_list;
-}
+// Initial Solution
 
 // Add an item with a quantity to the list
 
+// function add_item(grocery_list,item,quantity) {
+//   if (grocery_list.hasOwnProperty(item)) {
+//     grocery_list[item] += quantity;
+//   }
+//   else
+//     {grocery_list[item] = quantity;}
+//   return grocery_list;
+// }
+
+// // Remove an item from the list
+
+// function remove_item(grocery_list, item) {
+//   if (grocery_list.hasOwnProperty(item)) {
+//     delete grocery_list[item];
+//   }
+//   return grocery_list;
+// }
+
+// // Update quantities for items in your list
+
+// function update_item(grocery_list,item,quantity) {
+//   if (grocery_list.hasOwnProperty(item)) {
+//     {grocery_list[item] = quantity;}
+//     return grocery_list;
+//   };
+// }
+
+// // Print the list (Consider how to make it look nice!)
+
+// function print_list(grocery_list) {
+//   console.log(grocery_list);
+// }
+
+// // Driver Code
+
+// var grocery_list = {};
+// add_item(grocery_list, "apple", 2);
+// add_item(grocery_list, "pear", 3);
+// add_item(grocery_list, "apple", 2);
+// print_list(grocery_list);
+// remove_item(grocery_list,"pear");
+// update_item(grocery_list, "apple", 10);
+// print_list(grocery_list);
+
+
+// Refactored Code
+
 function add_item(grocery_list,item,quantity) {
   if (grocery_list.hasOwnProperty(item)) {
-    grocery_list.item += quantity;
+    grocery_list[item] += quantity;
   }
   else
-    {grocery_list.item = quantity;}
+    {grocery_list[item] = quantity;}
   return grocery_list;
 }
 
@@ -43,7 +82,7 @@ function add_item(grocery_list,item,quantity) {
 
 function remove_item(grocery_list, item) {
   if (grocery_list.hasOwnProperty(item)) {
-    delete grocery_list.item;
+    delete grocery_list[item];
   }
   return grocery_list;
 }
@@ -61,90 +100,27 @@ function print_list(grocery_list) {
   console.log(grocery_list);
 }
 
-// Refactored Code
+// Driver Code
 
-
+var grocery_list = {};
+add_item(grocery_list, "apple", 2);
+add_item(grocery_list, "pear", 3);
+add_item(grocery_list, "apple", 2);
+print_list(grocery_list);
+remove_item(grocery_list,"pear");
+update_item(grocery_list, "apple", 10);
+print_list(grocery_list);
 
 // Reflection
 
 // What concepts did you solidify in working on this challenge? (reviewing the passing // of information, objects, constructors, etc.)
 
+// I forgot the differences in functionality between dot notation and bracket for objects. Since I was passing strings through as arguments, bracket notation was preferable.
 
 // What was the most difficult part of this challenge?
 
+// Nothing too tricky here other than figuring out the bracket notation bit.
 
 // Did an array or object make more sense to use and why?
 
-
-
-//---Ruby---
-def add_item(grocery_list, item, quantity)
-  if grocery_list.has_key?(item)
-    grocery_list[item] += quantity
-  else
-    grocery_list[item] = quantity
-  end
-  grocery_list
-end
-
-// Method to remove an item from the list
-// input: list of items to remove (string)
-// steps:
-// => Convert string into array (commas replace spaces)
-// => iterate through array and remove each from hash if it exists
-// output: No output but grocery list is updated and stored
-
-def remove_item(grocery_list, item)
-  // convert list to an array
-  array = item.split(" ")
-
-  // iterate through array
-  // if array item exists in hash, delete the corresponding key
-  array.each do |food|
-    if grocery_list.has_key?(food)
-      grocery_list.delete(food)
-    end
-  end
-  grocery_list
-end
-
-
-// Method to update the quantity of an item
-// input: item that needs to be updated (string)
-// steps:
-// => look for item in existing hash
-// => IF it exists, update value to user input
-// => (optional) if it doesn't exist, prompt user
-// output: No output but grocery list is updated and stored
-
-def update(grocery_list, list, quantity)
-  if grocery_list.has_key?(list)
-    grocery_list[list] = quantity
-  end
-  grocery_list
-end
-
-// Method to print a list and make it look pretty
-// input: 'print'
-// steps: print hash
-// output: the full hash
-
-def print_list(grocery_list)
-  output_string1 = "Here is your grocery list:"
-  output_string2 = 0
-  grocery_list.each do |key, value|
-    output_string2 = "  //{key} //{value}"
-  end
-  output_string1
-  output_string2
-end
-
-// DRIVER CODE
-grocery_list = create_list("Apple Banana")
-add_item(grocery_list, "Lemonade", 2)
-add_item(grocery_list, "Tomatoes", 3)
-add_item(grocery_list, "Onions", 1)
-add_item(grocery_list, "Ice Cream", 4)
-remove_item(grocery_list, "Lemonade")
-update(grocery_list, "Ice Cream", 1)
-print_list(grocery_list)
+// An object made more sense since quantities were being tracked. Had I used arrays, I would have had to have two separate data structures (one listing item, the other quanitity) that would have had to be re-matched up during printing.
