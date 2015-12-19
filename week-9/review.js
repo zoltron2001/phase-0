@@ -3,25 +3,63 @@
 // Pseudocode
 
 // Create a new list
-  // This should be an object (key is item, value is quantity)
+  // This should be an OBJECT (KEY is item, VALUE is quantity)
 // Add an item with a quantity to the list
   // IF item is not on the list, add it to the list with the given value
   // ELSE item is on list, and one is added to its value (quantity)
-
+  // RETURN list
 // Remove an item from the list
-  //
-
+  // IF item is on list, delete item key
+  // RETURN list
 // Update quantities for items in your list
-  //
-  //
-
+  // IF item is on list, adjust quantity to given number
+  // RETURN list
 // Print the list (Consider how to make it look nice!)
   // Print results to console for MVP
   // Add HTML if there's time
 
 // Initial Solution (MVP)
 
-var grocery_list = {};
+// Create a new list
+
+function create_list(grocery_list,item, quantity) {
+  var grocery_list = {};
+  add_item(grocery_list,item,quantity);
+  return grocery_list;
+}
+
+// Add an item with a quantity to the list
+
+function add_item(grocery_list,item,quantity) {
+  if (grocery_list.hasOwnProperty(item)) {
+    grocery_list.item += quantity;
+  }
+  else
+    {grocery_list.item = quantity;}
+  return grocery_list;
+}
+
+// Remove an item from the list
+
+function remove_item(grocery_list, item) {
+  if (grocery_list.hasOwnProperty(item)) {
+    delete grocery_list.item;
+  }
+  return grocery_list;
+}
+
+// Update quantities for items in your list
+
+function update_item(grocery_list,item,quantity) {
+  remove_item(grocery_list, item);
+  add_item(grocery_list,item,quantity);
+}
+
+// Print the list (Consider how to make it look nice!)
+
+function print_list(grocery_list) {
+  console.log(grocery_list);
+}
 
 // Refactored Code
 
