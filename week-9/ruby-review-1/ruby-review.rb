@@ -111,3 +111,18 @@ p silverware_drawer.view_contents
 
 # Reflection
 
+=begin
+  What concepts did you review in this challenge?
+    Definitely practiced our refactoring skills here. Other than that it was just ruby in
+    general - accessors, push/pop, each, etc.
+
+  What is still confusing to you about Ruby?
+    Not too much confusing stuff here. The difficulty in this challenge had more to do with
+    figuring out why the program was created in this way rather than the language used to
+    write it.
+
+  What are you going to study to get more prepared for Phase 1?
+    I'm glad we're doing these ruby challenges. I was pretty rusty coming into this. If I'm
+    not feeling fresh after finishing the next ruby challengle, I'll consider a 3rd or 4th
+    next week.
+=end
