@@ -55,3 +55,15 @@ $(document).ready(function(){
 })
 
 // end of the document.ready function: do not remove or write DOM manipulation below this.
+// Reflect
+
+// What is jQuery?
+
+  // jQuery is a library appended to your HTML file that is meant to simplify the relationship between HTML and JavaScript.
+
+// What does jQuery do for you?
+  // jQuery's library allows you to impliement its pre-built features. #animate, for exmaple, is a pre-built jQuery method that animates HTML element. Rather than having to create our own JS animate method, we can access and use jQuery's.
+
+// What did you learn about the DOM while working on this challenge?
+
+  // I found it really interesting that we were linking jQuery through the HTML doc rather than the JavaScript one. It's a good example of how the HTML document is meant to pull all the resources together into structure. Here the remote jQuery library acts as a node on the DOM web. So jQuery is connected to HTML which is also connected to the JavaScript doc as well.
